@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.principal-section{
+    width: 100vw;
+    height: 30vh;
+    background-color: darkslategrey;
+}
+
+.principal-section__block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 3rem;
+}
