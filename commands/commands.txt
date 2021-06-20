@@ -1,0 +1,70 @@
+
+//consola unix
+ls // muestra las carpetas dentro del directorio
+pwd // muestra en que direccion estas
+cd // se emplea para cambiar entre directorios
+==> se utiliza por ejemplo: cd ./Users
+clear // limpiar la consola o ctrl + l
+cd ../ ==> se utiliza para ir al directorio anterior
+mkdir // crear un directorio o carpeta 
+touch vacio.txt // crear un archivo por ejemplo txt 
+vim vacio.txt //abris el editor para modificar el archivo
+(esc + i) ==> editar
+(esc + shift + z + z)
+cat vacio.txt // ver el contenido dentro de un archivo
+history // ver todos los comandos que se han escrito
+!numero // repites el comando que figura segun el historial
+rm vacio.txt // borras el archivo 
+comando --help ==> muestra todas las variables de un comando
+
+//comandos basicos
+git init // crear un repositorio git
+code // abris visual studio code
+git status // ver el estado del repositorio
+git add vacio.txt // agregas el archivo para que se trackee
+o git add . para agregar a todos los archivos
+git rm vacio.txt // untrackear el archivo
+git commit -m "mensaje descriptivo" // guarda los cambios realizados 
+(Si escriben commit solo, de todas formas tendran que colocar un mensaje y para salir es => esc + shift + z + z)
+
+//configurar git
+git config //ver todas las configuraciones que tiene git
+git config --list // configuracion por defecto actual
+git config --list --show-origin / muestra donde se guarda esta configuracion
+git config --global user.name "firstName lastName"
+git config --global user.email "suMail@gmail.com"
+
+//comandos avanzados
+
+git show vacio.txt // muestra los cambios que se hicieron respecto al commit anterior
+git diff commitA commitB // muestra los cambios entre un commit y otro
+git checkout commitB //vas a una version distinta a la actual 
+git checkout master // vas a la version actual
+git branch nombreDeLaRama // creas una ramificacion nueva
+git checkout nombreDeLaRama // te mueves entre ramas
+git reset commitB --hard o --soft ==> volvera a la version anterior que se especifica
+git log --stat // muestra las carpetas y archivos modificados y sus bytes
+git log --all
+git log --all --graph --decorate --oneline ==> muestra todos los cambios en forma grafica
+git reset --hard ==> borra absolutament todo. Si llegan a ejecutar este comando y hacen commit y luego pushean los asesino. OJO
+git reset HEAD ==> saca todos los archivos trackeados y los pone en unstaged
+git commit -am "mensaje descriptivo" ==> trackea los archivos cambiados y les añade un mensaje
+git merge nombreDeLaRama //fusiona una rama con la actual
+git show-branch --all ==> muestra simplificadamente las ramas
+gitk => usarlo si sos un pussy que necesita interfaz visual
+
+
+alias nombreCualquiera="comando"
+git tag -a v0.1 -m "mensaje" commitA==> tageas algo 
+git tag show-ref --tags
+
+
+//agregar a github un repositorio
+
+git remote add origin (URL)
+git remote ==> muestra la direccion remota
+git pull origin master ==> traes los archivos del repositorio de github
+git push origin master ==> envia los archivos al repositorio de github
+git pull origin master --allow-unreleated-histories ==> forzas el merge al repositorio de github cuando sale un error especifico
+git push origin nombreDeLaRama ==> envias una rama al github
+
