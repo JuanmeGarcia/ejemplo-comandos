@@ -61,6 +61,7 @@ git tag show-ref --tags
 
 //agregar a github un repositorio
 
+
 git remote add origin (URL)
 git remote ==> muestra la direccion remota
 git pull origin master ==> traes los archivos del repositorio de github
@@ -68,3 +69,11 @@ git push origin master ==> envia los archivos al repositorio de github
 git pull origin master --allow-unreleated-histories ==> forzas el merge al repositorio de github cuando sale un error especifico
 git push origin nombreDeLaRama ==> envias una rama al github
 
+
+
+// sistema que tengas ciertos productos ya preestablecidos y mediante algoritmo de ordenamiento se van a mostrar en orden
+
+//bubble sort
+
+//declaracion
+//buenas practicas

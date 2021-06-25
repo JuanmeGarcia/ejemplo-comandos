@@ -23,3 +23,11 @@ html{
     flex-wrap: wrap;
     font-size: 3rem;
 }
+
+.main-footer{
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    background-color: #f3f3f3;
+
+}
