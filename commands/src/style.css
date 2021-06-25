@@ -9,6 +9,8 @@ html{
 }
 
 .principal-section{
+    position: absolute;
+    top: 40%;
     width: 100vw;
     height: 30vh;
     background-color: darkslategrey;
