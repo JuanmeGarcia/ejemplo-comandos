@@ -51,7 +51,7 @@ git reset HEAD ==> saca todos los archivos trackeados y los pone en unstaged
 git commit -am "mensaje descriptivo" ==> trackea los archivos cambiados y les añade un mensaje
 git merge nombreDeLaRama //fusiona una rama con la actual
 git show-branch --all ==> muestra simplificadamente las ramas
-gitk => usarlo si sos un pussy que necesita interfaz visual
+gitk => interfaz visual
 
 
 alias nombreCualquiera="comando"
